@@ -77,8 +77,39 @@
 
 .hero-profile-card .profile-image{
   border-radius:20px !important;
-  object-fit:cover !important;
-  object-position:center top !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+
+@media(max-width:900px){
+  .hero-profile-card .profile-image-wrap{
+    width:210px !important;
+    height:240px !important;
+  }
+}
+
+@media(max-width:560px){
+  .hero-profile-card .profile-image-wrap{
+    width:190px !important;
+    height:215px !important;
+  }
+}
+
+/* Profile photo final override */
+.hero-profile-card .profile-image-wrap{
+  width:230px !important;
+  height:260px !important;
+  border-radius:24px !important;
+}
+
+.hero-profile-card .profile-image{
+  width:100% !important;
+  height:100% !important;
+  border-radius:20px !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  border:5px solid var(--panel) !important;
+  background:var(--panel) !important;
 }
 
 @media(max-width:900px){
