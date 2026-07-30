@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Shanjai Pushparaj — Electrical & Electronic Engineering Graduate focused on Embedded Systems, IoT, PCB Design, and Robotics." />
+  <meta name="description" content="Portfolio of Shanjai Pushparaj — Embedded Systems, PCB Design, IoT, Robotics and Hardware R&D." />
   <title>Shanjai Pushparaj | Embedded Systems Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,14 +13,13 @@
 <body>
   <header class="site-header">
     <nav class="nav container">
-      <a class="logo" href="#home">SP</a>
+      <a href="#home" class="logo">SP<span>.</span></a>
       <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
-        <a href="#leadership">Leadership</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
@@ -29,50 +28,61 @@
   <main>
     <section id="home" class="hero section">
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Electrical & Electronic Engineering Graduate</p>
-          <h1>Hi, I’m <span>Shanjai Pushparaj</span>.</h1>
-          <p class="hero-text">I build embedded, IoT, wireless sensing, PCB, and robotics projects using ESP32, STM32, LoRa, TinyML, LabVIEW, and custom hardware design.</p>
+        <div class="hero-copy">
+          <p class="eyebrow">Embedded Systems · PCB Design · IoT · Hardware R&D</p>
+          <h1>Embedded hardware and firmware projects built from PCB design to tested prototypes.</h1>
+          <p class="hero-text">
+            I am Shanjai Pushparaj, an Electrical and Electronic Engineering graduate from SLIIT with hands-on experience in ESP32/STM32 systems, custom PCB design, LoRa wireless sensing, TinyML deployment, sensor interfacing, robotics, and electronics troubleshooting.
+          </p>
           <div class="hero-actions">
             <a class="btn primary" href="#projects">View Projects</a>
             <a class="btn secondary" href="assets/docs/Shanjai_Pushparaj_CV.pdf" target="_blank" rel="noopener">Download CV</a>
           </div>
-          <div class="quick-info">
-            <span>Colombo, Sri Lanka</span>
-            <span>Embedded Systems</span>
-            <span>IoT & Hardware R&D</span>
-          </div>
         </div>
         <div class="hero-card">
-          <h2>Focus Areas</h2>
-          <ul>
-            <li>Embedded C/C++ development</li>
-            <li>ESP32 & STM32 systems</li>
-            <li>LoRa, BLE, UART/SPI/I2C</li>
-            <li>PCB design and hardware debugging</li>
-            <li>IoT dashboards and sensor systems</li>
-          </ul>
+          <div class="card-glow"></div>
+          <p class="card-label">Current Focus</p>
+          <h2>Entry-level Embedded Software / Embedded Systems / Hardware R&D roles</h2>
+          <div class="mini-tags">
+            <span>ESP32</span><span>STM32</span><span>LoRa</span><span>PCB</span><span>TinyML</span><span>BLE</span>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="stats section-tight">
+      <div class="container stats-grid">
+        <div><strong>7+</strong><span>Embedded Projects</span></div>
+        <div><strong>2</strong><span>Engineering Internships</span></div>
+        <div><strong>4-Layer</strong><span>Custom STM32 PCB</span></div>
+        <div><strong>100 m</strong><span>LoRa Prototype Test</span></div>
+        <div><strong>22 KB</strong><span>TinyML Model on STM32</span></div>
       </div>
     </section>
 
     <section id="about" class="section">
       <div class="container two-col">
         <div>
-          <p class="eyebrow">About Me</p>
-          <h2>Embedded systems, IoT, and hardware-software integration.</h2>
+          <p class="eyebrow">About</p>
+          <h2>Hardware-first embedded engineering portfolio.</h2>
         </div>
-        <div>
-          <p>I am an Electrical and Electronic Engineering graduate from SLIIT with hands-on experience in embedded systems, IoT communication, PCB design, TinyML deployment, wireless sensing, electronics testing, and hardware prototyping.</p>
-          <p>My work includes ESP32/STM32-based systems, LoRa communication, custom PCB design, sensor interfacing, LabVIEW visualization, Flutter/BLE integration, robotics, and unit-level electronics testing. I am interested in entry-level Embedded Software Engineer, Embedded Systems Engineer, IoT Engineer, and Hardware R&D roles.</p>
+        <div class="body-copy">
+          <p>
+            My work focuses on building practical embedded systems that combine firmware, circuit design, wireless communication, testing, and real-world troubleshooting. I enjoy projects where software has to interact closely with sensors, PCBs, communication modules, and physical hardware.
+          </p>
+          <p>
+            I am especially interested in embedded software development, IoT communication, hardware-software integration, PCB design, and product validation roles.
+          </p>
         </div>
       </div>
     </section>
 
     <section id="experience" class="section alt">
       <div class="container">
-        <p class="eyebrow">Experience</p>
-        <h2>Industrial & Teaching Experience</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Engineering internships and technical exposure</h2>
+        </div>
         <div class="timeline">
           <article class="timeline-item">
             <div class="timeline-date">Jun – Sep 2025</div>
@@ -80,14 +90,13 @@
               <h3>Engineering Intern — Research & Development</h3>
               <p class="muted">Volt Charge Sri Lanka, JAT Holdings PLC</p>
               <ul>
-                <li>Prototyped a LoRa-based current monitoring system using ESP32, RA-01 LoRa modules, CT clamps, CRC16 error detection, and optimized 433 MHz antennas.</li>
+                <li>Prototyped a LoRa-based current monitoring system using ESP32, RA-01 LoRa modules, CT clamps, CRC16 validation, and optimized 433 MHz antennas.</li>
                 <li>Calibrated RMS current readings against an ADL400-D reference energy meter for load monitoring and dynamic load-balancing support.</li>
                 <li>Built and validated an 8-channel electrical QC testing table to increase simultaneous unit-test throughput.</li>
-                <li>Performed firmware upload, device ID configuration, relay/LED/RCM checks, endurance testing, soldering, SMD rework, PCB repair, and diagnostics.</li>
+                <li>Performed unit-level QC including firmware upload, device ID configuration, relay/LED/RCM testing, endurance testing, soldering, SMD rework, PCB repair, and diagnostics.</li>
               </ul>
             </div>
           </article>
-
           <article class="timeline-item">
             <div class="timeline-date">Jun – Sep 2024</div>
             <div class="timeline-content">
@@ -96,18 +105,7 @@
               <ul>
                 <li>Supported maintenance and troubleshooting of electrical systems in a steel manufacturing plant.</li>
                 <li>Assisted a 33 kV solar power installation project through data collection and on-site implementation support.</li>
-                <li>Gained exposure to PLC-based automation and ladder programming in an industrial setting.</li>
-              </ul>
-            </div>
-          </article>
-
-          <article class="timeline-item">
-            <div class="timeline-date">Jan 2024 – Present</div>
-            <div class="timeline-content">
-              <h3>Teaching Assistant — Mathematics & Physics</h3>
-              <p class="muted">Anapheama Institution, Wattala</p>
-              <ul>
-                <li>Tutor Cambridge O-Level students by translating technical concepts into clear, exam-focused instruction.</li>
+                <li>Gained exposure to PLC-based automation and ladder programming in an industrial environment.</li>
               </ul>
             </div>
           </article>
@@ -117,88 +115,115 @@
 
     <section id="projects" class="section">
       <div class="container">
-        <p class="eyebrow">Selected Projects</p>
-        <h2>Projects that show embedded, IoT, PCB, and robotics capability.</h2>
-        <div class="project-grid">
-          <article class="project-card featured">
-            <div class="project-image placeholder">Add PCB / Headband Image</div>
-            <div class="project-body">
-              <span class="tag">TinyML · STM32 · PCB</span>
-              <h3>EEG-Based Wearable System for Sleep Quality Assessment</h3>
-              <p>Wearable EEG headband that captures frontal EEG signals, performs embedded sleep-stage inference, calculates a sleep quality score, and sends results to a Flutter mobile app via BLE.</p>
-              <ul>
-                <li>Designed a custom 4-layer STM32H743VIT6 PCB in EasyEDA, including schematic, routing, grounding, and power distribution.</li>
-                <li>Worked with STM32H743VIT6, ESP32, ADS1220, BioAmp EXG Pill, BLE, microSD, UART/SPI communication, and Flutter.</li>
-                <li>Deployed an INT8 TinyML model achieving 83.79% test accuracy in 22 KB flash and 1.67 KB RAM using ST Edge AI Studio.</li>
-              </ul>
-            </div>
-          </article>
+        <div class="section-heading project-heading">
+          <div>
+            <p class="eyebrow">Selected Projects</p>
+            <h2>Prototype-focused engineering work</h2>
+          </div>
+          <div class="filters" aria-label="Project filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="embedded">Embedded</button>
+            <button class="filter-btn" data-filter="pcb">PCB</button>
+            <button class="filter-btn" data-filter="iot">IoT</button>
+            <button class="filter-btn" data-filter="robotics">Robotics</button>
+          </div>
+        </div>
 
-          <article class="project-card">
-            <div class="project-image placeholder">Add Prototype Image</div>
-            <div class="project-body">
-              <span class="tag">LoRa · ESP32 · Current Sensing</span>
+        <article class="featured-project project-card" data-category="embedded pcb iot">
+          <div class="project-image placeholder">
+            <span>Add PCB / Headband / App Image</span>
+          </div>
+          <div class="project-content">
+            <p class="project-kicker">Flagship Project</p>
+            <h3>EEG-Based Wearable System for Sleep Quality Assessment</h3>
+            <p>
+              A wearable EEG headband system for sleep quality assessment using a custom STM32H743-based PCB, ESP32 feature extraction, ADS1220 ADC, BioAmp EXG Pill, TinyML inference, BLE communication, and a Flutter mobile app.
+            </p>
+            <ul>
+              <li>Designed the custom 4-layer STM32H743VIT6 PCB including schematic, routing, grounding, and power distribution in EasyEDA.</li>
+              <li>Contributed to the embedded pipeline: EEG acquisition, DSP filtering, feature extraction, UART/SPI communication, TinyML inference, and BLE transmission.</li>
+              <li>Deployed an INT8 TinyML sleep-staging model achieving 83.79% test accuracy using only 22 KB flash and 1.67 KB RAM.</li>
+            </ul>
+            <div class="tech-tags"><span>STM32H743</span><span>ESP32</span><span>ADS1220</span><span>TinyML</span><span>BLE</span><span>Flutter</span><span>EasyEDA</span></div>
+          </div>
+        </article>
+
+        <div class="project-grid">
+          <article class="project-card" data-category="embedded iot">
+            <div class="project-image placeholder"><span>Add LoRa Prototype Image</span></div>
+            <div class="project-content">
               <h3>LoRa-Based Current Monitoring System</h3>
-              <p>Wireless load-current monitoring prototype using CT clamps and LoRa communication.</p>
+              <p>Wireless load-current monitoring prototype using ESP32, RA-01 LoRa, CT clamps, ADC signal conditioning, compact packets, and CRC16 validation.</p>
               <ul>
                 <li>Designed CT signal conditioning with burden resistor selection, 1.65 V ADC biasing, and filtering.</li>
-                <li>Implemented compact LoRa packet transmission with CRC16 validation.</li>
-                <li>Tested optimized 433 MHz antennas and achieved reliable wireless transmission over approximately 100 m.</li>
+                <li>Tested 433 MHz antennas and achieved reliable wireless transmission over approximately 100 m.</li>
               </ul>
+              <div class="tech-tags"><span>ESP32</span><span>LoRa</span><span>PlatformIO</span><span>KiCad</span><span>CRC16</span></div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image placeholder">Add LabVIEW Dashboard</div>
-            <div class="project-body">
-              <span class="tag">ESP32 · LabVIEW · Monitoring</span>
+          <article class="project-card" data-category="embedded iot">
+            <div class="project-image placeholder"><span>Add LabVIEW Dashboard</span></div>
+            <div class="project-content">
               <h3>Smart Server Rack Monitoring System</h3>
-              <p>Rack-level environmental and electrical monitoring system with real-time visualization.</p>
+              <p>Local rack-level monitoring system for multi-point temperature, humidity, voltage, rack health index, and threshold-based alarms.</p>
               <ul>
-                <li>Used ESP32 for multi-point temperature, humidity, and voltage data acquisition.</li>
-                <li>Built LabVIEW visualization for rack health index, threshold alarms, and system status.</li>
-                <li>Implemented structured serial data transmission from ESP32 to LabVIEW.</li>
+                <li>Used ESP32 for data acquisition and structured serial transmission.</li>
+                <li>Built LabVIEW visualization for live monitoring, derived metrics, and health status indication.</li>
               </ul>
+              <div class="tech-tags"><span>ESP32</span><span>LabVIEW</span><span>Serial</span><span>Sensors</span></div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image placeholder">Add System Image</div>
-            <div class="project-body">
-              <span class="tag">Audio DSP · LoRa · ESP32</span>
+          <article class="project-card" data-category="embedded iot">
+            <div class="project-image placeholder"><span>Add Paddy Bug System Image</span></div>
+            <div class="project-content">
               <h3>Paddy Bug Detection & Repellent System</h3>
-              <p>Acoustic pest detection and repellent concept using microphone input, signal processing, and wireless communication.</p>
+              <p>Acoustic pest detection and repellent system using microphone-based signal acquisition, filtering, FFT analysis, and LoRa field communication.</p>
               <ul>
-                <li>Used INMP441 microphone input, IIR filtering, and FFT-based audio analysis.</li>
-                <li>Explored LoRa pole-to-pole communication for field deployment.</li>
-                <li>Designed a smart pole-mounted system for acoustic detection and response.</li>
+                <li>Implemented real-time audio analysis concepts using IIR filtering and FFT.</li>
+                <li>Explored LoRa pole-to-pole communication for distributed field deployment.</li>
               </ul>
+              <div class="tech-tags"><span>ESP32</span><span>INMP441</span><span>LoRa</span><span>FFT</span><span>IIR</span></div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image placeholder">Add Robot Image</div>
-            <div class="project-body">
-              <span class="tag">Robotics · Motor Control</span>
-              <h3>Line Follower Robot & Wi-Fi RC Car</h3>
-              <p>Robotics projects focused on autonomous and remote motor control using ESP32.</p>
+          <article class="project-card" data-category="embedded robotics">
+            <div class="project-image placeholder"><span>Add Robot Image</span></div>
+            <div class="project-content">
+              <h3>Line Follower Robot</h3>
+              <p>Fuzzy-logic-controlled line follower robot using ESP32, a 5-bit IR line sensor array, and TB6612FNG motor driver.</p>
               <ul>
-                <li>Built a fuzzy-logic-controlled line follower using ESP32, 5-bit IR sensor array, and TB6612FNG motor driver.</li>
-                <li>Built a Wi-Fi web-controlled RC car using ESP32 and L298N motor driver.</li>
+                <li>Implemented motor control logic for autonomous line following.</li>
+                <li>Used fuzzy logic to improve control response during turns and path changes.</li>
               </ul>
+              <div class="tech-tags"><span>ESP32</span><span>Fuzzy Logic</span><span>TB6612FNG</span><span>IR Sensor</span></div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image placeholder">Add Smart Dustbin Image</div>
-            <div class="project-body">
-              <span class="tag">IoT · Blynk · Sensors</span>
+          <article class="project-card" data-category="embedded robotics iot">
+            <div class="project-image placeholder"><span>Add RC Car Image</span></div>
+            <div class="project-content">
+              <h3>Wi-Fi Based RC Car</h3>
+              <p>ESP32-based remote-controlled car operated through a Wi-Fi web page with L298N motor driver-based motor control.</p>
+              <ul>
+                <li>Developed a web-based control interface hosted by the ESP32.</li>
+                <li>Controlled DC motors through an L298N motor driver for remote movement.</li>
+              </ul>
+              <div class="tech-tags"><span>ESP32</span><span>Wi-Fi</span><span>L298N</span><span>Web Control</span></div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="embedded iot">
+            <div class="project-image placeholder"><span>Add Smart Dustbin Image</span></div>
+            <div class="project-content">
               <h3>IoT-Based Smart Dustbin</h3>
-              <p>Smart waste-bin prototype with automatic lid control and IoT monitoring.</p>
+              <p>Smart dustbin with automatic lid control, bin-full detection, manual control, and Blynk notifications when the bin reaches 90% capacity.</p>
               <ul>
-                <li>Used ultrasonic sensing, servo motor control, and IR-based bin-full detection.</li>
-                <li>Integrated Blynk app manual control and notification when bin level reaches 90% full.</li>
+                <li>Used ultrasonic sensing, IR bin-full detection, servo actuation, and Blynk IoT dashboard integration.</li>
+                <li>Implemented notification logic for high bin-fill level monitoring.</li>
               </ul>
+              <div class="tech-tags"><span>ESP32</span><span>Blynk</span><span>Ultrasonic</span><span>IR Sensor</span><span>Servo</span></div>
             </div>
           </article>
         </div>
@@ -207,53 +232,37 @@
 
     <section id="skills" class="section alt">
       <div class="container">
-        <p class="eyebrow">Technical Skills</p>
-        <h2>Tools and technologies I use.</h2>
+        <div class="section-heading">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>Tools and technologies</h2>
+        </div>
         <div class="skills-grid">
-          <div class="skill-box"><h3>Programming</h3><p>C/C++, Python, MATLAB, Java, Arduino, Ladder Logic</p></div>
-          <div class="skill-box"><h3>Embedded & IoT</h3><p>ESP32, STM32, PlatformIO, STM32CubeIDE, BLE, LoRa, UART, SPI, I2C, ADC signal measurement</p></div>
-          <div class="skill-box"><h3>PCB & Hardware</h3><p>EasyEDA, KiCad, 4-layer PCB design/routing, soldering, SMD rework, oscilloscope diagnostics</p></div>
-          <div class="skill-box"><h3>Simulation & Tools</h3><p>LabVIEW, MATLAB, NI Multisim, Quartus</p></div>
+          <div class="skill-card"><h3>Programming</h3><p>C/C++, Python, MATLAB, Java, Arduino, Ladder Logic</p></div>
+          <div class="skill-card"><h3>Embedded & IoT</h3><p>ESP32, STM32, PlatformIO, STM32CubeIDE, BLE, LoRa, UART, SPI, I2C, ADC signal measurement</p></div>
+          <div class="skill-card"><h3>PCB & Hardware</h3><p>EasyEDA, KiCad, 4-layer PCB design/routing, soldering, SMD rework, oscilloscope diagnostics</p></div>
+          <div class="skill-card"><h3>Simulation & Tools</h3><p>LabVIEW, MATLAB, NI Multisim, Quartus, AutoCAD, PSIM, PowerWorld</p></div>
         </div>
       </div>
     </section>
 
-    <section id="education" class="section">
+    <section class="section">
       <div class="container two-col">
         <div>
-          <p class="eyebrow">Education</p>
-          <h2>Academic Background</h2>
+          <p class="eyebrow">Education & Leadership</p>
+          <h2>Academic background and volunteering</h2>
         </div>
-        <div class="education-list">
+        <div class="body-copy split-list">
           <div>
-            <h3>BSc (Hons) in Electrical and Electronic Engineering</h3>
+            <h3>BSc (Hons) Electrical and Electronic Engineering</h3>
             <p>Sri Lanka Institute of Information Technology, Malabe · Expected Oct 2026</p>
-            <p class="muted">Relevant coursework: Embedded Systems, Robotics, Power Electronics, Electrical Machines, Control Systems, Digital Electronics, Microcontrollers, Communication Systems, Signal Processing.</p>
+            <p class="muted">Relevant coursework: Embedded Systems, Robotics, Power Electronics, Control Systems, Digital Electronics, Microcontrollers, Communication Systems, Signal Processing</p>
           </div>
           <div>
-            <h3>Cambridge Advanced Level — Physical Sciences</h3>
-            <p>Lyceum International School, Nugegoda · June 2022</p>
+            <h3>Leadership</h3>
+            <p>Vice President, Rotaract Club of Colombo Port City — RI Year 2026/27</p>
+            <p>Vice President, Rotaract Club of SLIIT — RI Year 2025/26</p>
+            <p>Director of Public Relations, Rotaract Club of SLIIT — RI Year 2024/25</p>
           </div>
-          <div>
-            <h3>Cambridge Ordinary Level</h3>
-            <p>Lyceum International School, Nugegoda · June 2020</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="leadership" class="section alt">
-      <div class="container">
-        <p class="eyebrow">Leadership & Volunteering</p>
-        <h2>Community and leadership experience.</h2>
-        <div class="leadership-grid">
-          <div class="leadership-card"><h3>Vice President</h3><p>Rotaract Club of Colombo Port City — RI Year 2026/27</p></div>
-          <div class="leadership-card"><h3>Vice President</h3><p>Rotaract Club of SLIIT — RI Year 2025/26</p></div>
-          <div class="leadership-card"><h3>Director of Public Relations</h3><p>Rotaract Club of SLIIT — RI Year 2024/25</p></div>
-        </div>
-        <div class="achievements">
-          <h3>Achievements</h3>
-          <p>District Commissioner’s Award in Scouting · Runner-up, Inter-International U-19 Cricket Tournament · All Island Prize Winner, Spoken and Written English (IWMS) · 2nd Runner-up, Electrical Category — Lyceum Annual Life Skills Day</p>
         </div>
       </div>
     </section>
@@ -261,22 +270,23 @@
     <section id="contact" class="section contact-section">
       <div class="container contact-card">
         <p class="eyebrow">Contact</p>
-        <h2>Let’s connect.</h2>
-        <p>I am open to entry-level opportunities in Embedded Software, Embedded Systems, IoT, Electronics Testing, and Hardware R&D.</p>
-        <div class="contact-links">
-          <a href="mailto:shanjaipushparaj247@gmail.com">shanjaipushparaj247@gmail.com</a>
-          <a href="tel:+94772244624">077 224 4624</a>
-          <a href="assets/docs/Shanjai_Pushparaj_CV.pdf" target="_blank" rel="noopener">Download CV</a>
-          <a href="#" aria-label="Add LinkedIn URL here">LinkedIn URL</a>
-          <a href="#" aria-label="Add GitHub URL here">GitHub URL</a>
+        <h2>Let’s connect</h2>
+        <p>I am open to entry-level opportunities in embedded software, embedded systems, IoT, electronics testing, and hardware R&D.</p>
+        <div class="contact-actions">
+          <a class="btn primary" href="mailto:shanjaipushparaj247@gmail.com">Email Me</a>
+          <a class="btn secondary" href="assets/docs/Shanjai_Pushparaj_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn secondary" href="https://github.com/shanjai247" target="_blank" rel="noopener">GitHub</a>
         </div>
+        <p class="small-note">Update the LinkedIn URL before sharing this site with recruiters.</p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <p>© 2026 Shanjai Pushparaj. Built with HTML, CSS, and GitHub Pages.</p>
+    <div class="container footer-content">
+      <span>© 2026 Shanjai Pushparaj</span>
+      <span>Built with GitHub Pages</span>
     </div>
   </footer>
 
