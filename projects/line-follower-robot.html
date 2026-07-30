@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fuzzy Logic Line Follower Robot — project by Shanjai Pushparaj." />
+  <title>Fuzzy Logic Line Follower Robot | Shanjai Pushparaj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="nav container"><a href="../index.html#home" class="logo">SP<span>.</span></a><button class="nav-toggle" aria-label="Toggle navigation">☰</button><div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></div></nav></header>
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-grid">
+        <div>
+          <p class="breadcrumb"><a href="../index.html#projects">← Back to Projects</a></p>
+          <p class="eyebrow">Robotics · Motor Control · ESP32</p>
+          <h1>Fuzzy Logic Line Follower Robot</h1>
+          <p class="lead">A line follower robot built using ESP32, a 5-bit IR line sensor array, TB6612FNG motor driver, and fuzzy logic control for smoother autonomous path following.</p>
+          <div class="tech-tags"><span>ESP32</span><span>5-bit IR Sensor Array</span><span>TB6612FNG</span><span>Fuzzy Logic</span><span>DC Motors</span><span>Motor Control</span></div>
+        </div>
+        <div class="hero-card"><div class="card-glow"></div><p class="card-label">Project Snapshot</p><div class="hero-meta"><div><strong>Category</strong><span>Robotics</span></div><div><strong>Role</strong><span>Control Logic + Motor Driver</span></div><div><strong>Status</strong><span>Completed Prototype</span></div><div><strong>Controller</strong><span>ESP32</span></div></div></div>
+      </div>
+    </section>
+    <section class="section-tight"><div class="container"><div class="gallery-item placeholder" style="min-height:340px"><span>Main hero image for this project<br><small>Replace this with your best photo or PCB/dashboard screenshot</small></span></div></div></section>
+    <section class="section"><div class="container detail-grid">
+      <article class="detail-card"><h3>Problem</h3><p>Basic line followers can become unstable during turns and path changes when using simple threshold-based control. This project explored fuzzy logic to improve motor response.</p></article>
+      <article class="detail-card"><h3>Solution</h3><p>The robot reads line position using a 5-bit IR sensor array and adjusts motor speeds through a TB6612FNG driver. Fuzzy logic is used to determine smoother left/right correction based on sensor error.</p></article>
+      <article class="detail-card"><h3>My Contribution</h3><ul><li>Integrated ESP32 with the 5-bit IR sensor array and TB6612FNG motor driver.</li><li>Implemented fuzzy-logic-based motor control for autonomous line following.</li><li>Tested robot movement across turns and path changes.</li></ul></article>
+      <article class="detail-card"><h3>Outcome</h3><ul><li>Built a working autonomous robot prototype and gained practical experience in sensor-based control and motor driver integration.</li></ul></article>
+      <article class="detail-card wide"><h3>Project Gallery</h3><p>Add your real project photos inside the relevant folder under <strong>assets/images/</strong>, then replace these placeholders with image tags.</p><div class="gallery-grid"><div class="gallery-item placeholder"><span>Robot top view<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Sensor array close-up<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Motor driver wiring<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Testing track photo<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Code/control logic screenshot<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Demo image or video thumbnail<br><small>Replace with image</small></span></div></div></article>
+      <article class="detail-card wide"><h3>What I Learned</h3><p>This project strengthened my practical engineering workflow: understanding the problem, choosing suitable hardware, integrating firmware with electronics, testing the prototype, debugging issues, and presenting the result clearly.</p></article>
+    </div></section>
+    <section class="section alt"><div class="container next-projects"><a class="btn secondary" href="paddy-bug-system.html">← Previous</a><a class="btn primary" href="wifi-rc-car.html">Next Project →</a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-content"><span>© 2026 Shanjai Pushparaj</span><span><a href="../index.html#projects">Back to portfolio</a></span></div></footer>
+  <script src="../script.js"></script>
+</body>
+</html>

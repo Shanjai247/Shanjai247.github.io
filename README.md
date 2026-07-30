@@ -1,22 +1,38 @@
 # Shanjai Pushparaj Portfolio Website
 
-This is a GitHub Pages portfolio website for embedded systems, IoT, PCB design, robotics, and hardware R&D roles.
+This version includes clickable project detail pages.
 
-## How to update
+## How to publish
+1. Extract this ZIP.
+2. Upload all files and folders to your GitHub Pages repository: `shanjai247.github.io`.
+3. Replace existing files when GitHub asks.
+4. Commit changes.
+5. Wait 1-2 minutes and refresh your live website.
 
-1. Replace project placeholder images by adding image files to `assets/images/`.
-2. In `index.html`, replace each placeholder project image block with an image background or `<img>` tag.
-3. Update the LinkedIn link in the Contact section.
-4. Replace `assets/docs/Shanjai_Pushparaj_CV.pdf` whenever the CV is updated.
-5. Commit changes to the `main` branch. GitHub Pages will update automatically.
+## Important files
+- `index.html` — main homepage
+- `styles.css` — all styling
+- `script.js` — mobile menu and project filters
+- `projects/` — detailed pages for each project
+- `assets/images/` — put your project images here
+- `assets/docs/Shanjai_Pushparaj_CV.pdf` — CV download file
 
-## Suggested image filenames
+## Project image folders
+Add your project photos/screenshots into these folders:
+- `assets/images/eeg-wearable/`
+- `assets/images/lora-current/`
+- `assets/images/server-rack/`
+- `assets/images/paddy-bug/`
+- `assets/images/line-follower/`
+- `assets/images/rc-car/`
+- `assets/images/smart-dustbin/`
 
-- `fyp-pcb.jpg`
-- `fyp-headband.jpg`
-- `lora-prototype.jpg`
-- `server-rack-dashboard.jpg`
-- `paddy-bug-system.jpg`
-- `line-follower.jpg`
-- `rc-car.jpg`
-- `smart-dustbin.jpg`
+## Suggested image names
+Use simple lowercase names, for example:
+- `pcb-routing.png`
+- `prototype.jpg`
+- `dashboard.png`
+- `schematic.png`
+- `testing.jpg`
+
+After adding images, update the placeholders in the relevant project page.

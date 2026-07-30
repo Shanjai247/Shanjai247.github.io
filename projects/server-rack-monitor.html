@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Smart Server Rack Monitoring System — project by Shanjai Pushparaj." />
+  <title>Smart Server Rack Monitoring System | Shanjai Pushparaj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="nav container"><a href="../index.html#home" class="logo">SP<span>.</span></a><button class="nav-toggle" aria-label="Toggle navigation">☰</button><div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></div></nav></header>
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-grid">
+        <div>
+          <p class="breadcrumb"><a href="../index.html#projects">← Back to Projects</a></p>
+          <p class="eyebrow">Embedded Systems Programming · ESP32 · LabVIEW</p>
+          <h1>Smart Server Rack Monitoring System</h1>
+          <p class="lead">A local rack-level monitoring system for observing multi-point temperature, humidity, voltage, rack health index, and threshold-based alarms using ESP32 data acquisition and LabVIEW visualization.</p>
+          <div class="tech-tags"><span>ESP32</span><span>LabVIEW</span><span>Temperature Sensors</span><span>Humidity Sensors</span><span>Voltage Sensing</span><span>Serial Communication</span><span>Threshold Logic</span><span>Rack Health Index</span></div>
+        </div>
+        <div class="hero-card"><div class="card-glow"></div><p class="card-label">Project Snapshot</p><div class="hero-meta"><div><strong>Category</strong><span>Industrial IoT Monitoring</span></div><div><strong>Role</strong><span>ESP32 + LabVIEW Integration</span></div><div><strong>Status</strong><span>Academic Embedded Project</span></div><div><strong>Interface</strong><span>Serial + LabVIEW Dashboard</span></div></div></div>
+      </div>
+    </section>
+    <section class="section-tight"><div class="container"><div class="gallery-item placeholder" style="min-height:340px"><span>Main hero image for this project<br><small>Replace this with your best photo or PCB/dashboard screenshot</small></span></div></div></section>
+    <section class="section"><div class="container detail-grid">
+      <article class="detail-card"><h3>Problem</h3><p>Server racks can experience thermal stratification, humidity variation, and unstable electrical conditions. Monitoring only one point is not enough to detect abnormal rack behavior reliably.</p></article>
+      <article class="detail-card"><h3>Solution</h3><p>The ESP32 samples distributed sensors and transmits structured serial data to LabVIEW. LabVIEW parses the data, calculates derived metrics such as temperature differentials and rate of rise, evaluates threshold conditions, and displays rack status through numeric indicators and alarms.</p></article>
+      <article class="detail-card"><h3>My Contribution</h3><ul><li>Implemented ESP32-based sensor acquisition and structured ASCII serial data transmission.</li><li>Supported multi-point temperature, humidity, and voltage monitoring logic.</li><li>Built LabVIEW visualization with numeric indicators, meters, Boolean alarms, and rack health status.</li><li>Designed threshold-based monitoring for over-temperature, excessive temperature difference, voltage limits, and rack health index warnings.</li></ul></article>
+      <article class="detail-card"><h3>Outcome</h3><ul><li>Created a working lab-demonstrable monitoring system for rack environmental and electrical status.</li><li>Improved experience in serial communication, dashboard visualization, threshold logic, and embedded data acquisition.</li></ul></article>
+      <article class="detail-card wide"><h3>Project Gallery</h3><p>Add your real project photos inside the relevant folder under <strong>assets/images/</strong>, then replace these placeholders with image tags.</p><div class="gallery-grid"><div class="gallery-item placeholder"><span>Hardware setup photo<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>LabVIEW dashboard screenshot<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Sensor placement image<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Serial data format screenshot<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Threshold alarms screenshot<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Rack health index display<br><small>Replace with image</small></span></div></div></article>
+      <article class="detail-card wide"><h3>What I Learned</h3><p>This project strengthened my practical engineering workflow: understanding the problem, choosing suitable hardware, integrating firmware with electronics, testing the prototype, debugging issues, and presenting the result clearly.</p></article>
+    </div></section>
+    <section class="section alt"><div class="container next-projects"><a class="btn secondary" href="lora-current-monitoring.html">← Previous</a><a class="btn primary" href="paddy-bug-system.html">Next Project →</a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-content"><span>© 2026 Shanjai Pushparaj</span><span><a href="../index.html#projects">Back to portfolio</a></span></div></footer>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EEG-Based Wearable System for Sleep Quality Assessment — project by Shanjai Pushparaj." />
+  <title>EEG-Based Wearable System for Sleep Quality Assessment | Shanjai Pushparaj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="nav container"><a href="../index.html#home" class="logo">SP<span>.</span></a><button class="nav-toggle" aria-label="Toggle navigation">☰</button><div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></div></nav></header>
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-grid">
+        <div>
+          <p class="breadcrumb"><a href="../index.html#projects">← Back to Projects</a></p>
+          <p class="eyebrow">Flagship Project · Embedded Systems · TinyML · PCB Design</p>
+          <h1>EEG-Based Wearable System for Sleep Quality Assessment</h1>
+          <p class="lead">A low-cost wearable EEG headband system developed as a final year research project to assess sleep quality using frontal EEG signals, embedded TinyML inference, BLE communication, and a Flutter mobile application.</p>
+          <div class="tech-tags"><span>STM32H743VIT6</span><span>ESP32</span><span>ADS1220</span><span>BioAmp EXG Pill</span><span>TinyML</span><span>ST Edge AI Studio</span><span>BLE</span><span>Flutter</span><span>EasyEDA</span><span>UART</span><span>SPI</span><span>MicroSD</span></div>
+        </div>
+        <div class="hero-card"><div class="card-glow"></div><p class="card-label">Project Snapshot</p><div class="hero-meta"><div><strong>Category</strong><span>Biomedical Embedded System</span></div><div><strong>Role</strong><span>PCB Design + Integration</span></div><div><strong>Status</strong><span>Final Year Research Project</span></div><div><strong>Tools</strong><span>STM32, ESP32, ADS1220, TinyML</span></div></div></div>
+      </div>
+    </section>
+    <section class="section-tight"><div class="container"><div class="gallery-item placeholder" style="min-height:340px"><span>Main hero image for this project<br><small>Replace this with your best photo or PCB/dashboard screenshot</small></span></div></div></section>
+    <section class="section"><div class="container detail-grid">
+      <article class="detail-card"><h3>Problem</h3><p>University students often use screens before sleep, but most consumer tools only count screen time or estimate sleep indirectly. This project explored a wearable EEG-based system that directly measures brain activity during sleep and converts sleep-stage information into a simple sleep quality score.</p></article>
+      <article class="detail-card"><h3>Solution</h3><p>The system records frontal EEG using dry electrodes and an analog front-end, digitizes the signal, extracts features, stores overnight data, runs TinyML sleep-stage inference on an STM32 microcontroller, calculates a sleep score, and sends the result to a Flutter mobile application using Bluetooth Low Energy.</p></article>
+      <article class="detail-card"><h3>My Contribution</h3><ul><li>Designed the custom 4-layer STM32H743VIT6 main PCB including schematic, routing, grounding strategy, and power distribution in EasyEDA.</li><li>Integrated STM32, ESP32, ADS1220 ADC, BioAmp EXG Pill, microSD storage, BLE module, and battery-powered architecture.</li><li>Contributed to the embedded pipeline involving EEG acquisition, DSP filtering, feature extraction, UART/SPI communication, TinyML inference, sleep scoring, and BLE result transfer.</li><li>Validated the TinyML deployment pipeline on STM32 using ST Edge AI Studio, with the final INT8 model using approximately 22 KB flash and 1.67 KB RAM.</li></ul></article>
+      <article class="detail-card"><h3>Outcome</h3><ul><li>Final TinyML model achieved 83.79% test accuracy on the Sleep-EDF dataset.</li><li>Custom 4-layer PCB gave practical experience in high-density embedded hardware design.</li><li>End-to-end system demonstrated EEG data flow from wearable hardware to mobile app display.</li></ul></article>
+      <article class="detail-card wide"><h3>Project Gallery</h3><p>Add your real project photos inside the relevant folder under <strong>assets/images/</strong>, then replace these placeholders with image tags.</p><div class="gallery-grid"><div class="gallery-item placeholder"><span>PCB routing screenshot<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Assembled STM32 PCB photo<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>EEG headband prototype photo<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Flutter dashboard screenshot<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>System block diagram<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>TinyML/STM32 validation screenshot<br><small>Replace with image</small></span></div></div></article>
+      <article class="detail-card wide"><h3>What I Learned</h3><p>This project strengthened my practical engineering workflow: understanding the problem, choosing suitable hardware, integrating firmware with electronics, testing the prototype, debugging issues, and presenting the result clearly.</p></article>
+    </div></section>
+    <section class="section alt"><div class="container next-projects"><a class="btn secondary" href="../index.html#projects">← Previous</a><a class="btn primary" href="lora-current-monitoring.html">Next Project →</a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-content"><span>© 2026 Shanjai Pushparaj</span><span><a href="../index.html#projects">Back to portfolio</a></span></div></footer>
+  <script src="../script.js"></script>
+</body>
+</html>

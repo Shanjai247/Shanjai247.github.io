@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LoRa-Based Current Monitoring System — project by Shanjai Pushparaj." />
+  <title>LoRa-Based Current Monitoring System | Shanjai Pushparaj</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <header class="site-header"><nav class="nav container"><a href="../index.html#home" class="logo">SP<span>.</span></a><button class="nav-toggle" aria-label="Toggle navigation">☰</button><div class="nav-links"><a href="../index.html#about">About</a><a href="../index.html#experience">Experience</a><a href="../index.html#projects">Projects</a><a href="../index.html#skills">Skills</a><a href="../index.html#contact">Contact</a></div></nav></header>
+  <main>
+    <section class="project-hero">
+      <div class="container project-hero-grid">
+        <div>
+          <p class="breadcrumb"><a href="../index.html#projects">← Back to Projects</a></p>
+          <p class="eyebrow">Volt Charge Internship · Wireless Sensing · Embedded Firmware</p>
+          <h1>LoRa-Based Current Monitoring System</h1>
+          <p class="lead">A wireless load-current monitoring prototype developed during industrial training at Volt Charge Sri Lanka using ESP32, RA-01 LoRa modules, current transformer clamps, signal conditioning, and CRC16 packet validation.</p>
+          <div class="tech-tags"><span>ESP32</span><span>RA-01 LoRa</span><span>CT Clamp</span><span>PlatformIO</span><span>KiCad</span><span>CRC16</span><span>ADC Signal Conditioning</span><span>433 MHz Antenna</span><span>ADL400-D Energy Meter</span></div>
+        </div>
+        <div class="hero-card"><div class="card-glow"></div><p class="card-label">Project Snapshot</p><div class="hero-meta"><div><strong>Category</strong><span>Embedded IoT / Wireless Sensing</span></div><div><strong>Role</strong><span>Prototype + Firmware + Testing</span></div><div><strong>Status</strong><span>Industrial Training Project</span></div><div><strong>Test Result</strong><span>~100 m wireless transmission</span></div></div></div>
+      </div>
+    </section>
+    <section class="section-tight"><div class="container"><div class="gallery-item placeholder" style="min-height:340px"><span>Main hero image for this project<br><small>Replace this with your best photo or PCB/dashboard screenshot</small></span></div></div></section>
+    <section class="section"><div class="container detail-grid">
+      <article class="detail-card"><h3>Problem</h3><p>The system needed a practical way to measure load current and transmit current readings wirelessly over a longer distance with reliable packet validation and low hardware complexity.</p></article>
+      <article class="detail-card"><h3>Solution</h3><p>A sender unit measured current using CT clamps and an ESP32 ADC after signal conditioning. The readings were formatted into compact LoRa packets with CRC16 validation and transmitted to a receiver unit for load monitoring support.</p></article>
+      <article class="detail-card"><h3>My Contribution</h3><ul><li>Designed CT signal conditioning including burden resistor selection, 1.65 V ADC biasing, and filtering.</li><li>Developed ESP32 firmware for current measurement, LoRa transmission, and packet validation.</li><li>Implemented CRC16 error detection to reject corrupted packets.</li><li>Tested multiple 433 MHz antenna configurations and selected a practical quarter-wave antenna.</li><li>Prepared sender and receiver schematics in KiCad and built an enclosed proof-of-concept prototype.</li></ul></article>
+      <article class="detail-card"><h3>Outcome</h3><ul><li>Wireless current data transmission was tested successfully over approximately 100 m.</li><li>RMS current readings were calibrated against an ADL400-D reference energy meter.</li><li>The project improved practical skills in embedded firmware, LoRa communication, ADC measurement, antenna tuning, soldering, and system testing.</li></ul></article>
+      <article class="detail-card wide"><h3>Project Gallery</h3><p>Add your real project photos inside the relevant folder under <strong>assets/images/</strong>, then replace these placeholders with image tags.</p><div class="gallery-grid"><div class="gallery-item placeholder"><span>LoRa sender circuit photo<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Enclosed sender prototype<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Receiver connection photo<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>KiCad schematic screenshot<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Antenna comparison photo<br><small>Replace with image</small></span></div><div class="gallery-item placeholder"><span>Serial monitor/current reading screenshot<br><small>Replace with image</small></span></div></div></article>
+      <article class="detail-card wide"><h3>What I Learned</h3><p>This project strengthened my practical engineering workflow: understanding the problem, choosing suitable hardware, integrating firmware with electronics, testing the prototype, debugging issues, and presenting the result clearly.</p></article>
+    </div></section>
+    <section class="section alt"><div class="container next-projects"><a class="btn secondary" href="eeg-wearable.html">← Previous</a><a class="btn primary" href="server-rack-monitor.html">Next Project →</a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-content"><span>© 2026 Shanjai Pushparaj</span><span><a href="../index.html#projects">Back to portfolio</a></span></div></footer>
+  <script src="../script.js"></script>
+</body>
+</html>
